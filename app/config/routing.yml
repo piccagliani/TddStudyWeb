@@ -1,0 +1,4 @@
+dev_m_study_task_manage:
+    resource: "@DevMStudyTaskManageBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,15 @@
+dev_m_study_task_manage_list:
+    pattern: /
+    defaults: { _controller: DevMStudyTaskManageBundle:TaskManage:list }
+
+dev_m_study_task_manage_create:
+    pattern: /create
+    defaults: { _controller: DevMStudyTaskManageBundle:TaskManage:create }
+
+dev_m_study_task_manage_update:
+    pattern: /update/{id}
+    defaults: { _controller: DevMStudyTaskManageBundle:TaskManage:update }
+
+dev_m_study_task_manage_delete:
+    pattern: /delete/{id}
+    defaults: { _controller: DevMStudyTaskManageBundle:TaskManage:delete }
