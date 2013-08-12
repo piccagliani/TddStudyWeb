@@ -1,0 +1,14 @@
+DevMStudy\TaskManageBundle\Entity\User:
+    type: entity
+    table: users
+    repositoryClass: DevMStudy\TaskManageBundle\Entity\UserRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

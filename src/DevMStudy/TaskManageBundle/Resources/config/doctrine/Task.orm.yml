@@ -1,0 +1,32 @@
+DevMStudy\TaskManageBundle\Entity\Task:
+    type: entity
+    table: tasks
+    repositoryClass: DevMStudy\TaskManageBundle\Entity\TaskRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        title:
+            type: string
+            length: '200'
+        detail:
+            type: text
+#        assignee:
+#            type: integer
+        startDate:
+            type: date
+            column: start_date
+        dueDate:
+            type: date
+            column: due_date
+        progress:
+            type: smallint
+    manyToOne:
+        assignee:
+            targetEntity: Task
+            joinColumn:
+                name: assignee
+                referencedColumnName: id
+    lifecycleCallbacks: {  }
