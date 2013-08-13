@@ -13,14 +13,13 @@ DevMStudy\TaskManageBundle\Entity\Task:
             length: '200'
         detail:
             type: text
-#        assignee:
-#            type: integer
         startDate:
             type: date
             column: start_date
         dueDate:
             type: date
             column: due_date
+            nullable: true
         progress:
             type: smallint
     manyToOne:
