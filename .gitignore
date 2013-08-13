@@ -8,4 +8,4 @@
 /bin/
 /composer.phar
 /.idea
-/app/data/*.db3
+/app/data/*.db3*
