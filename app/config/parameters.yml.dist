@@ -2,7 +2,7 @@ parameters:
     database_driver:   pdo_sqlite
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     devm_study_tdd_web.db
+    database_name:     study_tdd_web.db
     database_user:     root
     database_password: ~
     database_path: %kernel.root_dir%/data/study_tdd_web.db3
