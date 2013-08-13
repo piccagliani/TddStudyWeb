@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Task
 {
+
     /**
      * @var integer
      */
@@ -40,7 +41,7 @@ class Task
     private $progress;
 
     /**
-     * @var \DevMStudy\TaskManageBundle\Entity\Task
+     * @var \DevMStudy\TaskManageBundle\Entity\User
      */
     private $assignee;
 
@@ -173,10 +174,10 @@ class Task
     /**
      * Set assignee
      *
-     * @param \DevMStudy\TaskManageBundle\Entity\Task $assignee
+     * @param \DevMStudy\TaskManageBundle\Entity\User $assignee
      * @return Task
      */
-    public function setAssignee(\DevMStudy\TaskManageBundle\Entity\Task $assignee = null)
+    public function setAssignee(\DevMStudy\TaskManageBundle\Entity\User $assignee = null)
     {
         $this->assignee = $assignee;
     
@@ -186,7 +187,7 @@ class Task
     /**
      * Get assignee
      *
-     * @return \DevMStudy\TaskManageBundle\Entity\Task 
+     * @return \DevMStudy\TaskManageBundle\Entity\User 
      */
     public function getAssignee()
     {

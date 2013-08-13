@@ -11,4 +11,8 @@ DevMStudy\TaskManageBundle\Entity\User:
         name:
             type: string
             length: '100'
+    oneToMany:
+        tasks:
+            targetEntity: Task
+            mappedBy: assignee
     lifecycleCallbacks: {  }

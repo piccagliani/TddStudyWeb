@@ -24,7 +24,8 @@ DevMStudy\TaskManageBundle\Entity\Task:
             type: smallint
     manyToOne:
         assignee:
-            targetEntity: Task
+            targetEntity: User
+            inversedBy: tasks
             joinColumn:
                 name: assignee
                 referencedColumnName: id
