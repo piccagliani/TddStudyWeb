@@ -9,3 +9,4 @@
 /composer.phar
 /.idea
 /app/data/*.db3*
+/tests/_log/*
