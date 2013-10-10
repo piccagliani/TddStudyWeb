@@ -10,3 +10,4 @@
 /.idea
 /app/data/*.db3*
 /tests/_log/*
+!/tests/_log/.gitkeep
